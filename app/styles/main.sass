@@ -1,0 +1,53 @@
+// $icon-font-path: "/bower_components/sass-bootstrap/fonts/"
+
+// @import 'sass-bootstrap/lib/bootstrap'
+
+@import 'mixins'
+@import 'colors'
+
+body
+  background: $grey
+  color: #f8f8f8
+  font-family: 'Ubuntu Mono', sans-serif
+  margin: 0
+  padding: 0
+a
+  text-decoration: none
+  color: #f8f8f8
+  &:hover
+    text-decoration: underline
+
+.container
+  width: 100%
+  max-width: 1000px
+  margin: 0 auto
+
+.top-nav
+  list-style: none
+  width: 100%
+  padding: 0
+  margin: 0
+  background: $black
+  @extend %clearfix
+  li
+    width: 33.333%
+    text-align: center
+    float: left
+    vertical-align: middle
+    line-height: 60px
+    h3
+      margin: 0
+.nav
+  list-style: none
+  width: 100%
+  padding: 0
+  margin: 0
+  background: $teal
+  @extend %clearfix
+  li
+    width: calc(100% / 7)
+    float: left
+    text-align: center
+    vertical-align: middle
+    line-height: 40px
+
